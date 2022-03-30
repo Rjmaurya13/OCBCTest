@@ -14,7 +14,7 @@
 - Most of classes are written based on Single Responsibility and Protocol oritend programming. 
 
 ## Requirement
-- It requires minimum iOS 13 version to install the app.
+- It requires minimum iOS 13 version to install the app and iPhone X above size device.
 
 ## Installation
 - To run the projet. Open project using OCBCTest.xcodeproj from XCode(12.0 and Newer) and Set target to any iOS 13 and above
