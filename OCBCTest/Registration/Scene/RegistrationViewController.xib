@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="OCBCTest" customModuleProvider="target">
+            <connections>
+                <outlet property="actView" destination="7lw-EE-5zt" id="ikN-1m-Mck"/>
+                <outlet property="btnBack" destination="pF9-I5-Bw2" id="4SQ-le-2Wb"/>
+                <outlet property="btnRegister" destination="NCU-lD-3RJ" id="5qV-Xt-pSI"/>
+                <outlet property="psdCnfTextView" destination="zbt-7W-Blj" id="tWn-P3-tsf"/>
+                <outlet property="psdTextView" destination="Iu4-Zt-9pX" id="mfP-Oa-369"/>
+                <outlet property="txtConfirmPassword" destination="Idk-ZG-I8g" id="Rzr-Sw-WQI"/>
+                <outlet property="txtPassword" destination="Rht-Q0-m5p" id="Pj4-sz-ZBr"/>
+                <outlet property="txtUserName" destination="Aue-N7-Iof" id="pzo-fw-Pza"/>
+                <outlet property="userNameView" destination="sDi-4I-YQl" id="gWy-Hp-Vdn"/>
+                <outlet property="view" destination="ay8-Vj-pnH" id="UUN-fg-R12"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ay8-Vj-pnH">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF9-I5-Bw2">
+                    <rect key="frame" x="20" y="68" width="64" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="2rT-0n-SBh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Td-J6-vbm">
+                    <rect key="frame" x="152" y="124" width="110" height="37"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to OCBC Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lr-tG-iJR">
+                    <rect key="frame" x="10" y="171" width="394" height="23"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CDU-yi-5SR">
+                    <rect key="frame" x="24" y="258" width="366" height="232"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-4I-YQl">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aue-N7-Iof">
+                                    <rect key="frame" x="16" y="16" width="334" height="32"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Aue-N7-Iof" secondAttribute="bottom" constant="16" id="GN6-mo-abw"/>
+                                <constraint firstAttribute="height" constant="64" id="gZx-vF-ktz"/>
+                                <constraint firstAttribute="trailing" secondItem="Aue-N7-Iof" secondAttribute="trailing" constant="16" id="qfP-g8-cHY"/>
+                                <constraint firstItem="Aue-N7-Iof" firstAttribute="top" secondItem="sDi-4I-YQl" secondAttribute="top" constant="16" id="uNw-80-tIJ"/>
+                                <constraint firstItem="Aue-N7-Iof" firstAttribute="leading" secondItem="sDi-4I-YQl" secondAttribute="leading" constant="16" id="x1K-UL-raf"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-Zt-9pX">
+                            <rect key="frame" x="0.0" y="84" width="366" height="64"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rht-Q0-m5p">
+                                    <rect key="frame" x="16" y="16" width="334" height="32"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="password"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Rht-Q0-m5p" firstAttribute="leading" secondItem="Iu4-Zt-9pX" secondAttribute="leading" constant="16" id="46d-n0-rQc"/>
+                                <constraint firstAttribute="trailing" secondItem="Rht-Q0-m5p" secondAttribute="trailing" constant="16" id="7xL-tV-2C8"/>
+                                <constraint firstItem="Rht-Q0-m5p" firstAttribute="top" secondItem="Iu4-Zt-9pX" secondAttribute="top" constant="16" id="HPc-Zl-2kE"/>
+                                <constraint firstAttribute="height" constant="64" id="c66-q7-eh5"/>
+                                <constraint firstAttribute="bottom" secondItem="Rht-Q0-m5p" secondAttribute="bottom" constant="16" id="rAu-AW-Rbv"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-7W-Blj">
+                            <rect key="frame" x="0.0" y="168" width="366" height="64"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-ZG-I8g">
+                                    <rect key="frame" x="16" y="16" width="334" height="32"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="password"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Idk-ZG-I8g" firstAttribute="top" secondItem="zbt-7W-Blj" secondAttribute="top" constant="16" id="0PQ-8J-CJM"/>
+                                <constraint firstAttribute="trailing" secondItem="Idk-ZG-I8g" secondAttribute="trailing" constant="16" id="3lH-Xo-tP7"/>
+                                <constraint firstAttribute="height" constant="64" id="AHF-Uf-C1B"/>
+                                <constraint firstAttribute="bottom" secondItem="Idk-ZG-I8g" secondAttribute="bottom" constant="16" id="M8t-Qx-vUY"/>
+                                <constraint firstItem="Idk-ZG-I8g" firstAttribute="leading" secondItem="zbt-7W-Blj" secondAttribute="leading" constant="16" id="ZCK-hQ-7us"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-lD-3RJ">
+                    <rect key="frame" x="20" y="538" width="374" height="60"/>
+                    <color key="backgroundColor" red="0.94503659009999996" green="0.55418938399999995" blue="0.63249909879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="DnX-ke-Ohb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="REGISTER">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7lw-EE-5zt">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ur3-hg-v8P"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="7lw-EE-5zt" firstAttribute="centerY" secondItem="ay8-Vj-pnH" secondAttribute="centerY" id="14C-7x-LqN"/>
+                <constraint firstItem="ur3-hg-v8P" firstAttribute="trailing" secondItem="CDU-yi-5SR" secondAttribute="trailing" constant="24" id="79j-n5-uH3"/>
+                <constraint firstItem="CDU-yi-5SR" firstAttribute="leading" secondItem="ur3-hg-v8P" secondAttribute="leading" constant="24" id="AFr-qS-UnZ"/>
+                <constraint firstItem="CDU-yi-5SR" firstAttribute="top" secondItem="8Lr-tG-iJR" secondAttribute="bottom" constant="64" id="H9O-ZT-92o"/>
+                <constraint firstItem="ur3-hg-v8P" firstAttribute="trailing" secondItem="NCU-lD-3RJ" secondAttribute="trailing" constant="20" id="KaC-0s-f6C"/>
+                <constraint firstItem="pF9-I5-Bw2" firstAttribute="top" secondItem="ur3-hg-v8P" secondAttribute="top" constant="24" id="NcR-1o-LWd"/>
+                <constraint firstItem="7lw-EE-5zt" firstAttribute="centerX" secondItem="ay8-Vj-pnH" secondAttribute="centerX" id="ZIC-Qy-tK7"/>
+                <constraint firstItem="8Lr-tG-iJR" firstAttribute="top" secondItem="7Td-J6-vbm" secondAttribute="bottom" constant="10" id="cCj-WK-t5B"/>
+                <constraint firstItem="pF9-I5-Bw2" firstAttribute="leading" secondItem="ur3-hg-v8P" secondAttribute="leading" constant="20" id="ime-RV-3IB"/>
+                <constraint firstItem="ur3-hg-v8P" firstAttribute="trailing" secondItem="8Lr-tG-iJR" secondAttribute="trailing" constant="10" id="mxU-NN-Byg"/>
+                <constraint firstItem="8Lr-tG-iJR" firstAttribute="leading" secondItem="ur3-hg-v8P" secondAttribute="leading" constant="10" id="rqX-lQ-1zD"/>
+                <constraint firstItem="NCU-lD-3RJ" firstAttribute="leading" secondItem="ur3-hg-v8P" secondAttribute="leading" constant="20" id="szD-qG-1dv"/>
+                <constraint firstItem="7Td-J6-vbm" firstAttribute="top" secondItem="ur3-hg-v8P" secondAttribute="top" constant="80" id="uqo-y8-LPa"/>
+                <constraint firstItem="NCU-lD-3RJ" firstAttribute="top" secondItem="CDU-yi-5SR" secondAttribute="bottom" constant="48" id="xfG-ag-Xmm"/>
+                <constraint firstItem="7Td-J6-vbm" firstAttribute="centerX" secondItem="ay8-Vj-pnH" secondAttribute="centerX" id="yzb-sb-ZM9"/>
+            </constraints>
+            <point key="canvasLocation" x="-632" y="-563"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
